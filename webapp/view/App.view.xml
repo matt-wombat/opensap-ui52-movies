@@ -1,0 +1,28 @@
+<mvc:View controllerName="opensap.movies.controller.App" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m">
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="page" title="{i18n>title}">
+					<content>
+						<Image
+							src="images/MoviesHeader.png"
+							width="100%"
+							tooltip="Movie illustration">
+						</Image>
+					</content>
+					<footer>
+						<Toolbar>
+							<ToolbarSpacer/>
+							<Link
+								emphasized="true"
+								text="Explore the IMDb Movie Database"
+								target="_blank"
+								href="http://www.imdb.com" />	
+							<ToolbarSpacer/>
+						</Toolbar>
+					</footer>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>
