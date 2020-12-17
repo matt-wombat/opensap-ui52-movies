@@ -75,18 +75,25 @@
 				"viewPath": "opensap.movies.view",
 				"controlAggregation": "pages",
 				"controlId": "app",
-				"clearControlAggregation": false
+				"clearControlAggregation": false,
+				"bypassed": {
+					"target": "NotFound"
+				}
 			},
 			"routes": [{
 				"name": "Home",
 				"pattern": "",
-				"target": ["Home"]
+				"target": [
+					"Home"
+				]
 			}, {
 				"name": "Detail",
 				"pattern": "movies/{movieId}/appointments/{appointmentId}",
 				"titleTarget": "",
 				"greedy": false,
-				"target": ["Detail"]
+				"target": [
+					"Detail"
+				]
 			}],
 			"targets": {
 				"Home": {
@@ -99,6 +106,12 @@
 				"Detail": {
 					"viewType": "XML",
 					"viewName": "Detail"
+				},
+				"NotFound": {
+					"viewType": "XML",
+					"viewId": "NotFound",
+					"viewName": "NotFound",
+					"transition": "show"
 				}
 			}
 		}
